@@ -1,4 +1,4 @@
-package org.example.randomchess.models;
+package org.example.randomchess.Models;
 
 import jakarta.persistence.*;
 import lombok.Data;

@@ -1,10 +1,11 @@
 package org.example.randomchess.Repositories;
 
-import org.example.randomchess.models.MyUser;
+import org.example.randomchess.Models.MyUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
+import java.util.Optional;
+
 public interface MyUserRepository extends JpaRepository<MyUser, Long> {
-    MyUser findByUsername(String username);
+    Optional<MyUser> findByUsername(String username);
 }
